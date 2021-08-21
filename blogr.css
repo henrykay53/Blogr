@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+:root {
+    --light-red: hsl(13, 100%, 72%);
+    --deep-red: hsl(353, 100%, 62%);
+}
+
+
+
+@media(max-width: 31.9375rem) {
+
+    .desktop {
+        display: none;
+    }
+
+    
+    .mobile-illustrator {
+        width: 100%;
+    }
+
+    .laptop-on-ring {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    
+
+    .mobile-header {
+        color: white;
+        background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(to right, var(--light-red), var(--deep-red));
+        /* background-image:  linear-gradient( to right, var(--light-red), var(--deep-red)), url("/images/bg-pattern-intro.svg"); */
+        /* height: 600px; */
+        background-size: 80rem;
+        background-position-x: -18rem;
+        background-position-y: -16rem;
+        background-repeat: cover;
+        border-bottom-left-radius: 6rem;
+    }
+
+    .intro-header {
+        font-size: 2.1875rem;
+    }
+
+    .mobile-sign-up, .mobile-learn-more {
+        margin-top: 1.25rem;
+        padding: 0.625rem 1.25rem;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 3.75rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobile-sign-up {
+        margin-right: 0.625rem;
+        background-color: white;
+        color: red;
+    }
+
+    .mobile-learn-more {
+        margin-left: 10px;
+        color: white;
+        background-color: transparent;
+    }
+
+    .mobile-logo {
+        margin-left: 1.25rem;
+    }
+
+    .mobile-logo, .hamburger {
+        margin-top: 2.5rem;
+    }
+
+    .hamburger{
+        margin-right: 1.25rem;
+    }
+    
+    
+    
+    .header-content {
+        height: 25rem;
+        text-align: center;
+        padding: 5.625rem 0 25rem 0;
+    }
+
+    .sec-one {
+        margin-top:6rem ;
+    }
+
+    .sec-two, .sec-three, .sec-four, .sec-five {
+        /* padding-left: 0.5rem; */
+        /* padding-right: 0.5rem; */
+        line-height: 2rem;
+    }
+
+    .sec-two, .sec-three {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .future-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .sec-four {
+        margin-top: 14rem;
+        color: white;
+        text-align: center;
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 5rem;
+    }
+
+    .sec-four {
+        background-color: rgb(64, 64, 106);
+        background-image: url("./images/bg-pattern-circles.svg");
+        /* background-position-x: -8rem; */
+        /* background-position-y: -8rem; */
+        background-position: -6rem -8rem;
+        background-size: 30rem;
+        background-repeat: no-repeat
+    }
+
+    .sec-four-content {
+        margin-top: -10rem;
+        padding-bottom: 4rem;
+    }
+
+    .mobile-phones {
+        position: relative;
+        bottom: 9rem;
+        width: 100%;
+
+    }
+
+    .sec-five {
+        text-align: center;
+    }
+
+    footer {
+        height: 60rem;
+        color: white;
+        background-color:rgb(19, 19, 51);
+        text-align: center;
+        border-top-right-radius: 5rem;
+        margin-top: 4rem;
+
+    }
+
+    .footer-logo {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-header {
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media(min-width: 501px) {
+    .mobile-first {
+        display: none;
+    }
+
+    
+}
+    
+
+.hamburger-overlay {
+    /* This is the over lay for when hamburger menu is clicked */
+    display: none;
+}
