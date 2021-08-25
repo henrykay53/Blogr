@@ -14,14 +14,12 @@ body {
 }
 
 
-
 @media(max-width: 31.9375rem) {
 
     .desktop {
         display: none;
     }
 
-    
     .mobile-illustrator {
         width: 100%;
     }
@@ -31,13 +29,9 @@ body {
         margin-top: 3rem;
     }
 
-    
-
     .mobile-header {
         color: white;
         background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(to right, var(--light-red), var(--deep-red));
-        /* background-image:  linear-gradient( to right, var(--light-red), var(--deep-red)), url("/images/bg-pattern-intro.svg"); */
-        /* height: 600px; */
         background-size: 80rem;
         background-position-x: -18rem;
         background-position-y: -16rem;
@@ -87,8 +81,6 @@ body {
         margin-right: 1.25rem;
     }
     
-    
-    
     .header-content {
         height: 25rem;
         text-align: center;
@@ -100,8 +92,6 @@ body {
     }
 
     .sec-two, .sec-three, .sec-four, .sec-five {
-        /* padding-left: 0.5rem; */
-        /* padding-right: 0.5rem; */
         line-height: 2rem;
     }
 
@@ -126,8 +116,6 @@ body {
     .sec-four {
         background-color: rgb(64, 64, 106);
         background-image: url("./images/bg-pattern-circles.svg");
-        /* background-position-x: -8rem; */
-        /* background-position-y: -8rem; */
         background-position: -6rem -8rem;
         background-size: 30rem;
         background-repeat: no-repeat
@@ -170,12 +158,207 @@ body {
     }
 }
 
+/* Media query for desktop */
 @media(min-width: 501px) {
+
     .mobile-first {
         display: none;
     }
 
-    
+    body {
+        margin: 0;
+    }
+
+    header {
+        height: 500px;
+        text-align: center;
+    }
+
+    header {
+        color: white;
+        background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(to right, var(--light-red), var(--deep-red));
+        background-size: 150rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-x: -1rem;
+        border-bottom-left-radius: 6rem;
+
+    }
+
+    .desktop-navigation {
+        padding-top: 4rem;
+    }
+
+    .desktop-logo {
+        margin-left: 10rem
+    }
+
+    .product, .company, .connect {
+        margin-left: 6rem;
+    }
+
+    .desktop-form {
+        margin-left: 45rem;
+    }
+
+    .desktop-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .desktop-content-header {
+        font-size: 3rem;
+    }
+
+    .desktop-nav-content {
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+    .dropdown-arrow {
+        padding-left: 0.5rem;
+    }
+
+    .desktop-paragraph {
+        margin-top: -1.5rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .login, .learn {
+        margin-right: 0.8rem;
+        background-color: transparent;
+        color: white;
+    }
+
+    .sign-up, .start {
+        background-color: white;
+        color: red;
+    }
+
+    .start {
+        margin-right: 1rem;
+    }
+
+    .login, .sign-up, .start, .learn {
+        padding: 0.625rem 1.25rem;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 3.75rem;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .the-future {
+        position: relative;
+        top: 8rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .section-flex {
+        display: flex;
+        align-items: center;
+        height: 67rem;
+    }
+
+    .section-flex {
+        background-image: url("./images/illustration-editor-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 70rem;
+        background-position-x: 69rem;
+    }
+
+    .sec-one-content {
+        margin-left: 14rem;
+        line-height: 2rem;
+    } 
+
+    .robust {
+        padding-top: 2rem;
+    }
+
+    .sec-two {
+        background-image: url("./images/bg-pattern-circles.svg");
+        background-repeat: no-repeat;
+        background-size: 76rem;
+        background-position-x: -17rem;
+        background-position-y: -43rem;
+        background-color: rgb(11, 11, 49);
+        border-top-right-radius: 4rem;
+        border-bottom-left-radius: 4rem;
+    }
+
+    .sec-two {
+        display: flex;
+        margin-top: 10rem;
+        height: 26rem;
+    }
+
+    .two-phones {
+        position: relative;
+        top: -4rem;
+        left: 10rem;
+    }
+
+    .sec-two-content {
+        color: white;
+        line-height: 2rem;
+        padding-top: 6rem;
+        padding-left: 20rem;
+    }
+
+    .sec-two-header {
+        font-size: 2.3rem;
+    }
+
+    .sec-three {
+        display: flex;
+        align-items: center;
+        margin-top: 12rem;
+        margin-bottom: 6rem;
+        height: 60rem;
+    }
+
+    .sec-three {
+        background-image: url("./images/illustration-laptop-desktop.svg");
+        background-size: 73rem;
+        background-repeat: no-repeat;
+        background-position-x: -21rem;
+    }
+
+    .sec-three-content {
+        line-height: 2rem;
+        margin-left: 55rem;
+        margin-top: -8rem;
+    }
+
+
+    footer {
+        height: 20rem;
+        text-align: left;
+        color: white;
+        background-color: rgb(11, 11, 49);
+        border-top-right-radius: 3.5rem;
+    }
+
+    .footer {
+        display: flex;
+        margin-left: 30rem;
+        padding-top: 3rem;
+    }
+
+    .footer-product, .footer-company, .footer-connect {
+        margin-left: 8rem;
+    }
+
+    .footer-logo {
+        padding-top: 1rem;
+        padding-right: 4rem;
+    }
+
 }
     
 

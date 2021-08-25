@@ -160,11 +160,12 @@
     
     <div class="desktop">
         <header class="desktop-header">
-            <nav>
-                <img src="images/logo.svg" alt="logo" class="desktop-logo">
+            <nav class="desktop-navigation">
+                <div><img src="images/logo.svg" alt="logo" class="desktop-logo"></div>
+
+                
                 <section class="product">
-                    <p></p>Product</p>
-                    <img src="images/icon-arrow-dark.svg" alt="dropdown-arrow">
+                    <p>Product<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></p>
                     <ul class="product-dropdown">
                         <li>Overview</li>
                         <li>Pricing</li>
@@ -175,8 +176,7 @@
                 </section>
 
                 <section class="company">
-                    <p>Company</p>
-                    <img src="images/icon-arrow-dark.svg" alt="dropdown-arrow">
+                    <p>Company<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></p>
                     <ul class="company-dropdown">
                         <li>About</li>
                         <li>Team</li>
@@ -186,8 +186,7 @@
                 </section>
 
                 <section class="connect">
-                    <p>Connect</p>
-                    <img src="images/icon-arrow-dark.svg" alt="dropdown-arrow">
+                    <p>Connect<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></p>
                     <ul class="connect-dropdown">
                         <li>Contact</li>
                         <li>Newsletter</li>
@@ -195,83 +194,88 @@
                     </ul>
                 </section>
 
-                <form>
-                    <button>Login</button>
-                    <button>Sign Up</button>
+                <form class="desktop-form">
+                    <button class="login">Login</button>
+                    <button class="sign-up">Sign Up</button>
                 </form>
             </nav>
 
-            <h1>A mordern publishing platform</h1>
-            <p>Grow your audience and build your online brand</p>
+            <section class="desktop-nav-content">  
+                <h1 class="desktop-content-header">A mordern publishing platform</h1>
+                <p class="desktop-paragraph">Grow your audience and build your online brand</p>
 
-            <form>
-                <button>Start for Free</button>
-                <button>Learn More</button>
+                <form>
+                <button class="start">Start for Free</button>
+                <button class="learn">Learn More</button>
             </form>
+            </section>
         </header>
 
         
-        <h2>Designed for the future</h2>
-        <div>
-            <section>
-                <h2>Introducing an extensible editor</h2>
-                <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing:
-                    creating content. The editor supports management of multiple blogs and allows easy
-                    manipulation of embeds such as images, videos, and Markdown.
-                </p>
-                <p>Extensibility with plugins and themes provide easy ways to add functionality or change
-                    the looks of a blog
-                </p>
-            </section>
-        
-            <section>
-                <h2>Robust content management</h2>
-                <p>Flexible content management enables users to easily move through posts.
-                    Increase the usabality of your blog by adding customized categories, sections,
-                    format, or flow. With this functionality, you're in full control
-                </p>
-            </section>
+        <h2 class="the-future">Designed for the future</h2>
+        <div class="section-flex">
+            <section class="sec-one-content"> 
+                <div>
+                    <h2>Introducing an extensible editor</h2>
+                    <p>Blogr features an exceedingly intuitive interface which lets you focus<br>
+                        on one thing:creating content. The editor supports management of<br> multiple blogs and allows easy
+                        manipulation of embeds such as images,<br> videos, and Markdown. Extensibility with plugins and themes provide<br> easy ways to add functionality or change
+                        the looks of a blog.
+                   </p>
+                </div>
 
-            <img src="images/illustration-editor-desktop.svg" alt="image-illustrator">
-        </div>
-
-        <div>
-            <img src="images/bg-pattern-circles.svg" alt="circles">
-            <img src="images/illustration-phones.svg" alt="phones">
-
-            <section>
-                <h1>State of the Art Infrastructure</h1>
-                <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-                This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-                </p>
+                <div>
+                    <h2 class="robust">Robust content management</h2>
+                    <p>Flexible content management enables users to easily move through<br> posts.
+                        Increase the usabality of your blog by adding customized<br> categories, sections,
+                        format, or flow. With this functionality, you're in<br> full control.
+                    </p>
+                </div>
             </section>
         </div>
 
-        <div>
-            <img src="images/illustration-laptop-desktop.svg" alt="laptop">
-            <div>
+        <div class="sec-two">
+            <section>
+                <img src="images/illustration-phones.svg" alt="phones" class="two-phones">
+            </section>
+           
+
+            <section class="sec-two-content">
+                <h1 class="sec-two-header">State of the Art Infrastructure</h1>
+                <p>With reliability and speed in mind, worldwide data centers provide the <br>backbone for ultra-fast connectivity.
+                This ensures your site will load<br> instantly, no matter where your readers are, keeping your site<br> competitive.
+                </p>
+            </section>
+        </div>
+
+        <div class="sec-three"> 
+            <div class="sec-three-content">
                 <section>
                     <h2>Free, open, simple</h2>
-                    <p>Blogr is a free and open source application backed by a large community of helpful developers.
-                        It supports features such as code syntax highlighting, RSS feeds, social media integration, third-
-                        party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                    <p>Blogr is a free and open source application backed by a large<br> community of helpful developers.
+                        It supports features such as code<br> syntax highlighting, RSS feeds, social media integration, third-
+                        party<br> commenting tools, and works seamlessly with Google Analytics. The<br> architecture is clean and is relatively easy to learn.
                     </p>
                 </section>
         
                 <section>
                     <h2>Power tooling</h2>
-                    <p>Batteries included. We built a simple and straightforward CLI tool that makes
-                        customization and deployment a breeze, but capable of producing even the most
+                    <p>Batteries included. We built a simple and straightforward CLI tool that<br> makes
+                        customization and deployment a breeze, but capable of<br> producing even the most
                         complicated sites.
                     </p>
                 </section>
             </div>
-
-            <footer>
-                <img src="images/logo.svg" alt="logo">
+        </div>
+        <footer>
+            <section class="footer">
+                <div>
+                    <img src="images/logo.svg" alt="logo" class="footer-logo">
+                </div>
+                
 
                 <div class="footer-product">
-                    <p>Product</p>
+                    <h3>Product</h3>
                     <p>Overview</p>
                     <p>Pricing</p>
                     <p>Marketplace</p>
@@ -280,6 +284,7 @@
                 </div>
     
                 <div class="footer-company">
+                    <h3>Company</h3>
                     <p>About</p>
                     <p>Team</p>
                     <p>Blog</p>
@@ -287,15 +292,12 @@
                 </div>
     
                 <div class="footer-connect">
-                    <p>Contact</p>
+                    <h3>Contact</h3>
                     <p>Newsletter</p>
                     <p>Linkedln</p>
                 </div>
-            </footer>
-        </div>
+            </section>
+        </footer>
     </div>
-
-
-    
 </body>
 </html>
