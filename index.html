@@ -10,12 +10,14 @@
 
     <!-- style -->
     <link href="blogr.css" type="text/css" rel="stylesheet">
+
+    <!-- google fonts -->
 </head>
 <body>
 
-
     <div class="mobile-first">
         <header class="mobile-header">
+
             <nav class="mobile-nav">
                 <div><img src="images/logo.svg" alt="brand-logo" class="mobile-logo"></div>
                 <div> <img src="images/icon-hamburger.svg" alt="hamburger-menu" class="hamburger"></div>
@@ -25,20 +27,21 @@
                 <h1 class="intro-header ">A mordern<br>publishing platform</h1>
                 <p>Grow your audience and build your<br>online brand</p>
 
-            <form>
-                <button class="mobile-sign-up">Start for free </button>
-                <button class="mobile-learn-more">Learn More</button>
-            </form>
+                <form>
+                    <button class="mobile-sign-up">Start for free </button>
+                    <button class="mobile-learn-more">Learn More</button>
+                </form>
             </section>
 
-            
         </header>
 
+
         <section class="hamburger-overlay">
-            <section class="product">
-                <p>Product</p>
-                <img src="images/icon-arrow-dark.svg" alt="dropdown-arrow">
-                <ul class="product-dropdown">
+           
+
+            <section class="product dropdown">
+                <p>Product<img src="images/icon-arrow-dark.svg" alt="dropdown-arrow"></p>
+                <ul class="dropdown-content">
                     <li>Overview</li>
                     <li>Pricing</li>
                     <li>Marketplace</li>
@@ -47,10 +50,9 @@
                 </ul>
             </section>
 
-            <section class="company">
-                <p>Company</p>
-                <img src="images/icon-arrow-dark.svg" alt="dropdown-arrow">
-                <ul class="company-dropdown">
+            <section class="company dropdown">
+                <p>Company<img src="images/icon-arrow-dark.svg" alt="dropdown-arrow"></p>
+                <ul class="dropdown-content">
                     <li>About</li>
                     <li>Team</li>
                     <li>Blog</li>
@@ -58,19 +60,20 @@
                 </ul>
             </section>
 
-            <section class="connect">
-                <p>Connect</p>
-                <img src="images/icon-arrow-dark.svg" alt="dropdown-arrow">
-                <ul class="connect-dropdown">
+            <section class="connect dropdown">
+                <p>Connect  <img src="images/icon-arrow-dark.svg" alt="dropdown-arrow"></p>
+                <ul class="dropdown-content">
                     <li>Contact</li>
                     <li>Newsletter</li>
                     <li>Linkedln</li>
                 </ul>
             </section>
+            <hr>
 
-            <form>
-                <button>Login</button>
-                <button>Sign Up</button>
+
+            <form class="overlay-form">  
+                <div><button class="login">Login</button></div>
+                <div><button class="sign-up">  Sign Up</button></div>
             </form>
 
         </section>
@@ -164,34 +167,40 @@
                 <div><img src="images/logo.svg" alt="logo" class="desktop-logo"></div>
 
                 
-                <section class="product">
-                    <p>Product<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></p>
-                    <ul class="product-dropdown">
-                        <li>Overview</li>
-                        <li>Pricing</li>
-                        <li>Marketplace</li>
-                        <li>Features</li>
-                        <li>Integrations</li>
-                    </ul>
+                <section class="product dropdown">
+                    <div>Product<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Overview</li>
+                            <li>Pricing</li>
+                            <li>Marketplace</li>
+                            <li>Features</li>
+                            <li>Integrations</li>
+                        </ul>
+                    </div>
                 </section>
 
-                <section class="company">
-                    <p>Company<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></p>
-                    <ul class="company-dropdown">
-                        <li>About</li>
-                        <li>Team</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
-                    </ul>
+                <section class="company dropdown">
+                    <div>Company<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>About</li>
+                            <li>Team</li>
+                            <li>Blog</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
                 </section>
 
-                <section class="connect">
-                    <p>Connect<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></p>
-                    <ul class="connect-dropdown">
-                        <li>Contact</li>
-                        <li>Newsletter</li>
-                        <li>Linkedln</li>
-                    </ul>
+                <section class="connect dropdown">
+                    <div>Connect<img src="images/icon-arrow-light.svg" alt="dropdown-arrow" class="dropdown-arrow"></div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Contact</li>
+                            <li>Newsletter</li>
+                            <li>Linkedln</li>
+                        </ul>
+                    </div>
                 </section>
 
                 <form class="desktop-form">
@@ -276,28 +285,30 @@
 
                 <div class="footer-product">
                     <h3>Product</h3>
-                    <p>Overview</p>
-                    <p>Pricing</p>
-                    <p>Marketplace</p>
-                    <p>Features</p>
-                    <p>Integrations</p>
+                    <p class="fp">Overview</p>
+                    <p class="fp">Pricing</p>
+                    <p class="fp">Marketplace</p>
+                    <p class="fp">Features</p>
+                    <p class="fp">Integrations</p>  
                 </div>
-    
+
                 <div class="footer-company">
                     <h3>Company</h3>
-                    <p>About</p>
-                    <p>Team</p>
-                    <p>Blog</p>
-                    <p>Careers</p>
+                    <p class="fp">About</p>
+                    <p class="fp">Team</p>
+                    <p class="fp">Blog</p>
+                    <p class="fp">Careers</p>  
                 </div>
-    
+
                 <div class="footer-connect">
-                    <h3>Contact</h3>
-                    <p>Newsletter</p>
-                    <p>Linkedln</p>
+                    <h3>Connect</h3>
+                    <p class="fp">Contact</p>
+                    <p class="fp">Newsletter</p>
+                    <p class="fp">LinkedIn</p>
                 </div>
             </section>
         </footer>
     </div>
+
 </body>
 </html>

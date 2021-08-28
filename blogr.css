@@ -8,11 +8,14 @@ body {
 }
 
 
+
 :root {
     --light-red: hsl(13, 100%, 72%);
     --deep-red: hsl(353, 100%, 62%);
 }
 
+
+/* mobile */
 
 @media(max-width: 31.9375rem) {
 
@@ -20,6 +23,80 @@ body {
         display: none;
     }
 
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown > p {
+        padding-top: 2rem;
+    }
+
+    .hamburger-overlay {
+        /* display: none; */
+        text-align: center;
+    }
+    
+    ul {
+    
+        list-style: none;
+    }
+    
+    .hamburger-overlay {
+        position: fixed;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        top: 5rem;
+        left: 1rem;
+        right: 1rem;
+        background-color: white;
+    }
+    
+    .hamburger-overlay {
+        /* margin-left: 1.5rem; */
+        border-radius: 0.5rem;
+        margin: 2rem auto;
+        box-shadow: 0rem 1rem 2rem rgba(94, 80, 80, 0.678);
+    }
+    
+    hr {
+        margin-top: 2rem;
+        width: 82%;
+    }
+
+    .sign-up {
+        padding: 0.625rem 1.25rem;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 3.75rem;
+        background-image: linear-gradient(to right, var(--light-red), var(--deep-red));
+        color: white;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .login {
+        padding: 1rem 1.5rem;
+        margin-top: 2rem;
+        border-radius: 3.75rem;
+        border: 2px solid white;
+        background-color: white;
+    
+    }
+
+    ul {
+        border-radius: 1rem;
+        background-color: rgba(225, 216, 216, 0.707);
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+    
+    li {
+        margin-right: 2.5rem;
+        padding-bottom: 0.2rem;
+        line-height: 2rem;
+    }
+  
     .mobile-illustrator {
         width: 100%;
     }
@@ -114,7 +191,7 @@ body {
     }
 
     .sec-four {
-        background-color: rgb(64, 64, 106);
+        background-color: rgb(11, 11, 49);
         background-image: url("./images/bg-pattern-circles.svg");
         background-position: -6rem -8rem;
         background-size: 30rem;
@@ -140,7 +217,7 @@ body {
     footer {
         height: 60rem;
         color: white;
-        background-color:rgb(19, 19, 51);
+        background-color: rgb(11, 11, 49);
         text-align: center;
         border-top-right-radius: 5rem;
         margin-top: 4rem;
@@ -169,9 +246,50 @@ body {
         margin: 0;
     }
 
+    li {
+        list-style: none;
+    }
+
     header {
         height: 500px;
         text-align: center;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding: 2rem 3rem;
+        border-radius: 0.5rem;
+    }
+
+    .dropdown-content {
+        box-shadow: -0rem 0.5rem 0.1rem rgba(36, 36, 35, 0.234);
+    }
+
+    li {
+        margin-left: -2rem;
+        line-height: 1.5rem;
+    }
+
+    .dropdown:hover {
+        text-decoration: underline;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    li {
+        color: gray;
+    }
+
+    li:hover {
+        color: black;
     }
 
     header {
@@ -247,8 +365,26 @@ body {
         border-radius: 3.75rem;
     }
 
-    ul {
-        display: none;
+    :hover.start {
+        color: white;
+        background-color: var(--deep-red);
+        border: 2px solid var(--deep-red);
+    }
+
+    :hover.learn {
+        color: red;
+        background-color: white;
+    }
+    
+    :hover.login {
+        color: red;
+        background-color: white;
+    }
+
+    :hover.sign-up {
+        color: white;
+        background-color: var(--deep-red);
+        border: 2px solid var(--deep-red);
     }
 
     .the-future {
@@ -354,15 +490,18 @@ body {
         margin-left: 8rem;
     }
 
+    /* .footer>p:hover { */
+        /* text-decoration: underline; */
+    /* } */
+
+    .fp:hover {
+        text-decoration: underline;
+    }
+
     .footer-logo {
         padding-top: 1rem;
         padding-right: 4rem;
     }
 
 }
-    
 
-.hamburger-overlay {
-    /* This is the over lay for when hamburger menu is clicked */
-    display: none;
-}
