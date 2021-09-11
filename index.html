@@ -20,12 +20,12 @@
 
             <nav class="mobile-nav">
                 <div><img src="images/logo.svg" alt="brand-logo" class="mobile-logo"></div>
-                <div> <img src="images/icon-hamburger.svg" alt="hamburger-menu" class="hamburger"></div>
+                <div> <img src="images/icon-hamburger.svg" alt="hamburger-menu" class="hamburger" id="hamburger"></div>
             </nav>
 
             <section class="header-content">
                 <h1 class="intro-header ">A mordern<br>publishing platform</h1>
-                <p>Grow your audience and build your<br>online brand</p>
+                <p class="header-para">Grow your audience and build your<br>online brand</p>
 
                 <form>
                     <button class="mobile-sign-up">Start for free </button>
@@ -36,12 +36,12 @@
         </header>
 
 
-        <section class="hamburger-overlay">
+        <section class="hamburger-overlay" id="overlay">
            
 
-            <section class="product dropdown">
+            <section class="product dropdown" id="dropdown">
                 <p>Product<img src="images/icon-arrow-dark.svg" alt="dropdown-arrow"></p>
-                <ul class="dropdown-content">
+                <ul class="dropdown-content" id="content">
                     <li>Overview</li>
                     <li>Pricing</li>
                     <li>Marketplace</li>
@@ -50,9 +50,9 @@
                 </ul>
             </section>
 
-            <section class="company dropdown">
+            <section class="company dropdown" id="dropdown">
                 <p>Company<img src="images/icon-arrow-dark.svg" alt="dropdown-arrow"></p>
-                <ul class="dropdown-content">
+                <ul class="dropdown-content" id="content">
                     <li>About</li>
                     <li>Team</li>
                     <li>Blog</li>
@@ -60,9 +60,9 @@
                 </ul>
             </section>
 
-            <section class="connect dropdown">
+            <section class="connect dropdown" id="dropdown">
                 <p>Connect  <img src="images/icon-arrow-dark.svg" alt="dropdown-arrow"></p>
-                <ul class="dropdown-content">
+                <ul class="dropdown-content" id="content">
                     <li>Contact</li>
                     <li>Newsletter</li>
                     <li>Linkedln</li>
@@ -309,6 +309,8 @@
             </section>
         </footer>
     </div>
+
+    <script src="blogr.js"></script>
 
 </body>
 </html>
