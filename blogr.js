@@ -5,21 +5,26 @@ var body = document.body;
 
 
 //When the hamburger menu is clicked it triggers the image changer function
-// This function changes the hmburger icon as well as displays the overlay
-// Hamburger menu funtion
+// This function changes the hamburger icon as well as displays the overlay
+// Hamburger menu function
 ham.addEventListener("click", function() {
 
     var img = document.getElementById("hamburger");
   
-    if (overlay.classList.contains("show")) { //hamberger is closed
+    if (overlay.classList.contains("show")) { // When hamburger is closed
         overlay.classList.remove("show");
         img.src="images/icon-hamburger.svg";
         overlay.style.display = "none";
         body.classList.remove("noscroll");
         // document.body.style.position = "";
+
+        // All overlay content will be hidden as soon as hmaburger menu is closed
+        cont1.style.display = "none";
+        cont2.style.display = "none";
+        cont3.style.display = "none";
         
     } else {
-        overlay.classList.add("show"); // hamburger is open
+        overlay.classList.add("show"); // When hamburger is open
         img.src = "images/icon-close.svg";
         overlay.style.display = "block";
         body.classList.add("noscroll");
@@ -49,6 +54,8 @@ drop1.addEventListener("click", function() {
     }else{
         cont1.classList.add("show");
         cont1.style.display = "block";
+        cont2.style.display = "none";
+        cont3.style.display = "none";
     }
 });
 
@@ -60,6 +67,8 @@ drop2.addEventListener("click", function() {
     }else{
         cont2.classList.add("show");
         cont2.style.display = "block";
+        cont1.style.display = "none";
+        cont3.style.display = "none";
     }
 });
 
@@ -71,5 +80,7 @@ drop3.addEventListener("click", function() {
     }else{
         cont3.classList.add("show");
         cont3.style.display = "block";
+        cont1.style.display = "none";
+        cont2.style.display = "none";
     }
 });
