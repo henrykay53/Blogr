@@ -20,7 +20,6 @@ body {
 }
 
 /* mobile */
-
 @media(max-width: 31.9375rem) {
 
     .desktop {
@@ -34,6 +33,7 @@ body {
     .dropdown > p {
         padding-top: 2rem;
     }
+
 
     .hamburger-overlay {
         display: none;
@@ -439,7 +439,6 @@ body {
         position: relative;
         bottom: 9rem;
         width: 100%;
-
     }
 
     .laptop-on-ring {
@@ -447,12 +446,9 @@ body {
         margin-top: 3rem;
     }
 
-
     .sec-five {
         text-align: center;
     }
-
-
 
     footer {
         font-size: 1.8rem;
@@ -462,7 +458,6 @@ body {
         text-align: center;
         border-top-right-radius: 5rem;
         margin-top: 4rem;
-
     }
 
     .footer-logo {
@@ -474,8 +469,6 @@ body {
         margin-top: 2.5rem;
         margin-bottom: 3rem;
     }
-
-   
 }
 
 
