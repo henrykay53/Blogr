@@ -509,6 +509,7 @@ body {
 
     .dropdown:hover {
         text-decoration: underline;
+        cursor: pointer;
     }
 
     .dropdown:hover .dropdown-content {
