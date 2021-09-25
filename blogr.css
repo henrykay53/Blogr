@@ -56,7 +56,6 @@ body {
     }
     
     .hamburger-overlay {
-        /* margin-left: 1.5rem; */
         border-radius: 0.5rem;
         margin: 2rem auto;
         box-shadow: 0rem 1rem 2rem rgba(94, 80, 80, 0.678);
@@ -90,8 +89,8 @@ body {
     ul {
         border-radius: 1rem;
         background-color: rgba(225, 216, 216, 0.707);
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
 
     }
     
@@ -258,12 +257,6 @@ body {
         padding-top: 2rem;
     }
 
-    
-    ul {
-    
-        list-style: none;
-    }
-    
     .hamburger-overlay {
         position: fixed;
         padding-top: 2rem;
@@ -272,14 +265,30 @@ body {
         left: 1rem;
         right: 1rem;
         background-color: white;
+        font-size: 1.2rem;
     }
     
     .hamburger-overlay {
-        /* margin-left: 1.5rem; */
         border-radius: 0.5rem;
-        margin: 2rem auto;
+        margin: 3rem auto;
         box-shadow: 0rem 1rem 2rem rgba(94, 80, 80, 0.678);
     }
+
+    
+    ul {
+        list-style: none;
+        border-radius: 1rem;
+        background-color: rgba(225, 216, 216, 0.707);
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    li {
+        margin-right: 2.5rem;
+        padding-bottom: 0.2rem;
+        line-height: 2rem;
+    }
+
     
     hr {
         margin-top: 2rem;
@@ -306,20 +315,6 @@ body {
     
     }
 
-    ul {
-        border-radius: 1rem;
-        background-color: rgba(225, 216, 216, 0.707);
-        margin-left: 1rem;
-        margin-right: 1rem;
-
-    }
-    
-    li {
-        margin-right: 2.5rem;
-        padding-bottom: 0.2rem;
-        line-height: 2rem;
-    }
-
     .desktop {
         display: none;
     }
@@ -328,13 +323,13 @@ body {
         color: white;
         background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(to right, var(--light-red), var(--deep-red));
         background-size: 80rem;
-        /* background-position-x: -18rem; */
         background-position-y: -16rem;
         background-repeat: cover;
         border-bottom-left-radius: 6rem;
     }
 
     .intro-header {
+        line-height: 4rem;
         font-size: 3.5rem;
     }
 
@@ -383,7 +378,6 @@ body {
     .header-content {
         height: 25rem;
         text-align: center;
-        /* padding: 5.625rem 0 25rem 0; */
     }
 
     .sec-one {
@@ -431,7 +425,7 @@ body {
     }
 
     .sec-four-content {
-        margin-top: -10rem;
+        margin-top: -18rem;
         padding-bottom: 4rem;
     }
 
@@ -566,7 +560,6 @@ body {
     }
 
     .desktop-nav-content {
-        /* text-align: center; */
         margin-top: 6rem;
     }
 
@@ -727,10 +720,7 @@ body {
         margin-left: 8rem;
     }
 
-    /* .footer>p:hover { */
-        /* text-decoration: underline; */
-    /* } */
-
+    
     .fp:hover {
         text-decoration: underline;
     }
